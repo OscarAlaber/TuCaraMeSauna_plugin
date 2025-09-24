@@ -1,34 +1,34 @@
 /**
- * TCMS Geolocation JavaScript
+ * TCMS Geolocalización JavaScript
  *
  * @package TCMS_Messaging_System
  */
 
-// Initialize when DOM is ready
+// INICIALIZAR CUANDO EL DOM ESTE LISTO
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize geolocation
+    // iniicializando geolocalizacion.
     TCMSGeolocation.init();
 });
 
 // Geolocation object
 const TCMSGeolocation = {
     /**
-     * User location
+     * localizacion de usuario
      */
     userLocation: null,
     
     /**
-     * Default location (used if geolocation fails)
+     * Ubicacion predeterminada si falta la geoloaclización
      */
     defaultLocation: {
-        latitude: 40.7128,
-        longitude: -74.0060,
-        city: 'New York',
-        country: 'United States'
+        latitude: 40.407115, 
+        longitude: -3.693401,
+        city: 'Madrid',
+        country: 'España'
     },
     
     /**
-     * Initialize geolocation
+     * Initializando geolocalización
      */
     init: function() {
         // Check if geolocation is needed on this page
